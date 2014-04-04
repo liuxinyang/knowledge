@@ -1,0 +1,94 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+LINESIZE	weblog.c	43;"	d	file:
+TABLE_COLS	weblog.c	33;"	d	file:
+TABLE_COLS_SCAN	weblog.c	20;"	d	file:
+cur	dblist.c	/^    sqlite3_vtab_cursor   cur;    \/* this must go first *\/$/;"	m	struct:dblist_cursor_s	file:
+cur	stub.c	/^    sqlite3_vtab_cursor   cur;$/;"	m	struct:stub_cursor_s	file:
+cur	weblog.c	/^    sqlite3_vtab_cursor   cur;               \/* this must be first *\/$/;"	m	struct:weblog_cursor_s	file:
+db	dblist.c	/^    sqlite3               *db;   \/* module specific fields then follow *\/$/;"	m	struct:dblist_vtab_s	file:
+db	weblog.c	/^    sqlite3        *db;$/;"	m	struct:weblog_vtab_s	file:
+dblist_bestindex	dblist.c	/^static int dblist_bestindex( sqlite3_vtab *vtab, sqlite3_index_info *info )$/;"	f	file:
+dblist_close	dblist.c	/^static int dblist_close( sqlite3_vtab_cursor *cur )$/;"	f	file:
+dblist_column	dblist.c	/^static int dblist_column( sqlite3_vtab_cursor *cur, sqlite3_context *ctx, int cidx )$/;"	f	file:
+dblist_connect	dblist.c	/^static int dblist_connect( sqlite3 *db, void *udp, int argc, $/;"	f	file:
+dblist_cursor	dblist.c	/^} dblist_cursor;$/;"	t	typeref:struct:dblist_cursor_s	file:
+dblist_cursor_s	dblist.c	/^typedef struct dblist_cursor_s {$/;"	s	file:
+dblist_disconnect	dblist.c	/^static int dblist_disconnect( sqlite3_vtab *vtab )$/;"	f	file:
+dblist_eof	dblist.c	/^static int dblist_eof( sqlite3_vtab_cursor *cur )$/;"	f	file:
+dblist_filter	dblist.c	/^static int dblist_filter( sqlite3_vtab_cursor *cur,$/;"	f	file:
+dblist_get_row	dblist.c	/^static int dblist_get_row( dblist_cursor *c )$/;"	f	file:
+dblist_init	dblist.c	/^int dblist_init( sqlite3 *db, char **error, const sqlite3_api_routines *api )$/;"	f
+dblist_mod	dblist.c	/^static sqlite3_module dblist_mod = {$/;"	v	file:
+dblist_next	dblist.c	/^static int dblist_next( sqlite3_vtab_cursor *cur )$/;"	f	file:
+dblist_open	dblist.c	/^static int dblist_open( sqlite3_vtab *vtab, sqlite3_vtab_cursor **cur )$/;"	f	file:
+dblist_rename	dblist.c	/^static int dblist_rename( sqlite3_vtab *vtab, const char *newname )$/;"	f	file:
+dblist_rowid	dblist.c	/^static int dblist_rowid( sqlite3_vtab_cursor *cur, sqlite3_int64 *rowid )$/;"	f	file:
+dblist_sql	dblist.c	/^static const char *dblist_sql = $/;"	v	file:
+dblist_vtab	dblist.c	/^} dblist_vtab;$/;"	t	typeref:struct:dblist_vtab_s	file:
+dblist_vtab_s	dblist.c	/^typedef struct dblist_vtab_s {$/;"	s	file:
+eof	dblist.c	/^    int                   eof;    \/* EOF flag *\/$/;"	m	struct:dblist_cursor_s	file:
+eof	weblog.c	/^    int            eof;                      \/* EOF flag *\/$/;"	m	struct:weblog_cursor_s	file:
+filename	weblog.c	/^    char           *filename;$/;"	m	struct:weblog_vtab_s	file:
+fptr	weblog.c	/^    FILE           *fptr;                    \/* used to scan file *\/$/;"	m	struct:weblog_cursor_s	file:
+line	weblog.c	/^    char           line[LINESIZE];           \/* line buffer *\/$/;"	m	struct:weblog_cursor_s	file:
+line_len	weblog.c	/^    int            line_len;                 \/* length of data in buffer *\/$/;"	m	struct:weblog_cursor_s	file:
+line_ptrs	weblog.c	/^    char           *(line_ptrs[TABLE_COLS]); \/* array of pointers *\/$/;"	m	struct:weblog_cursor_s	file:
+line_ptrs_valid	weblog.c	/^    int            line_ptrs_valid;          \/* flag for scan data *\/$/;"	m	struct:weblog_cursor_s	file:
+line_size	weblog.c	/^    int            line_size[TABLE_COLS];    \/* length of data for each pointer *\/$/;"	m	struct:weblog_cursor_s	file:
+op	stub.c	/^static char* op( unsigned char op )$/;"	f	file:
+row	stub.c	/^    sqlite_int64          row;$/;"	m	struct:stub_cursor_s	file:
+row	weblog.c	/^    sqlite_int64   row;                      \/* current row count (ROWID) *\/$/;"	m	struct:weblog_cursor_s	file:
+stmt	dblist.c	/^    sqlite3_stmt          *stmt;  \/* PRAGMA database_list statement *\/$/;"	m	struct:dblist_cursor_s	file:
+stub_begin	stub.c	/^static int stub_begin( sqlite3_vtab *vtab )$/;"	f	file:
+stub_bestindex	stub.c	/^static int stub_bestindex( sqlite3_vtab *vtab, sqlite3_index_info *info )$/;"	f	file:
+stub_close	stub.c	/^static int stub_close( sqlite3_vtab_cursor *cur )$/;"	f	file:
+stub_column	stub.c	/^static int stub_column( sqlite3_vtab_cursor *cur, sqlite3_context *ctx, int cidx )$/;"	f	file:
+stub_commit	stub.c	/^static int stub_commit( sqlite3_vtab *vtab )$/;"	f	file:
+stub_connect	stub.c	/^static int stub_connect( sqlite3 *db, void *udp, int argc, $/;"	f	file:
+stub_create	stub.c	/^static int stub_create( sqlite3 *db, void *udp, int argc, $/;"	f	file:
+stub_cursor	stub.c	/^} stub_cursor;$/;"	t	typeref:struct:stub_cursor_s	file:
+stub_cursor_s	stub.c	/^typedef struct stub_cursor_s {$/;"	s	file:
+stub_destroy	stub.c	/^static int stub_destroy( sqlite3_vtab *vtab )$/;"	f	file:
+stub_disconnect	stub.c	/^static int stub_disconnect( sqlite3_vtab *vtab )$/;"	f	file:
+stub_eof	stub.c	/^static int stub_eof( sqlite3_vtab_cursor *cur )$/;"	f	file:
+stub_filter	stub.c	/^static int stub_filter( sqlite3_vtab_cursor *cur,$/;"	f	file:
+stub_init	stub.c	/^int stub_init( sqlite3 *db, char **error, const sqlite3_api_routines *api )$/;"	f
+stub_mod	stub.c	/^static sqlite3_module stub_mod = {$/;"	v	file:
+stub_next	stub.c	/^static int stub_next( sqlite3_vtab_cursor *cur )$/;"	f	file:
+stub_open	stub.c	/^static int stub_open( sqlite3_vtab *vtab, sqlite3_vtab_cursor **cur )$/;"	f	file:
+stub_rename	stub.c	/^static int stub_rename( sqlite3_vtab *vtab, const char *newname )$/;"	f	file:
+stub_rollback	stub.c	/^static int stub_rollback( sqlite3_vtab *vtab )$/;"	f	file:
+stub_rowid	stub.c	/^static int stub_rowid( sqlite3_vtab_cursor *cur, sqlite3_int64 *rowid )$/;"	f	file:
+stub_sql	stub.c	/^const static char *stub_sql = "CREATE TABLE t "$/;"	v	file:
+stub_sync	stub.c	/^static int stub_sync( sqlite3_vtab *vtab )$/;"	f	file:
+stub_update	stub.c	/^static int stub_update( sqlite3_vtab *vtab, int argc, sqlite3_value **argv, sqlite_int64 *rowid )$/;"	f	file:
+stub_vtab	stub.c	/^} stub_vtab;$/;"	t	typeref:struct:stub_vtab_s	file:
+stub_vtab_s	stub.c	/^typedef struct stub_vtab_s {$/;"	s	file:
+vtab	dblist.c	/^    sqlite3_vtab          vtab;  \/* this must go first *\/$/;"	m	struct:dblist_vtab_s	file:
+vtab	stub.c	/^   sqlite3_vtab           vtab;$/;"	m	struct:stub_vtab_s	file:
+vtab	weblog.c	/^    sqlite3_vtab   vtab;$/;"	m	struct:weblog_vtab_s	file:
+weblog_bestindex	weblog.c	/^static int weblog_bestindex( sqlite3_vtab *vtab, sqlite3_index_info *info )$/;"	f	file:
+weblog_close	weblog.c	/^static int weblog_close( sqlite3_vtab_cursor *cur )$/;"	f	file:
+weblog_column	weblog.c	/^static int weblog_column( sqlite3_vtab_cursor *cur, sqlite3_context *ctx, int cidx )$/;"	f	file:
+weblog_connect	weblog.c	/^static int weblog_connect( sqlite3 *db, void *udp, int argc, $/;"	f	file:
+weblog_cursor	weblog.c	/^} weblog_cursor;$/;"	t	typeref:struct:weblog_cursor_s	file:
+weblog_cursor_s	weblog.c	/^typedef struct weblog_cursor_s {$/;"	s	file:
+weblog_disconnect	weblog.c	/^static int weblog_disconnect( sqlite3_vtab *vtab )$/;"	f	file:
+weblog_eof	weblog.c	/^static int weblog_eof( sqlite3_vtab_cursor *cur )$/;"	f	file:
+weblog_filter	weblog.c	/^static int weblog_filter( sqlite3_vtab_cursor *cur,$/;"	f	file:
+weblog_get_line	weblog.c	/^static int weblog_get_line( weblog_cursor *c )$/;"	f	file:
+weblog_init	weblog.c	/^int weblog_init( sqlite3 *db, char **error, const sqlite3_api_routines *api )$/;"	f
+weblog_mod	weblog.c	/^static sqlite3_module weblog_mod = {$/;"	v	file:
+weblog_next	weblog.c	/^static int weblog_next( sqlite3_vtab_cursor *cur )$/;"	f	file:
+weblog_open	weblog.c	/^static int weblog_open( sqlite3_vtab *vtab, sqlite3_vtab_cursor **cur )$/;"	f	file:
+weblog_rename	weblog.c	/^static int weblog_rename( sqlite3_vtab *vtab, const char *newname )$/;"	f	file:
+weblog_rowid	weblog.c	/^static int weblog_rowid( sqlite3_vtab_cursor *cur, sqlite3_int64 *rowid )$/;"	f	file:
+weblog_scanline	weblog.c	/^static int weblog_scanline( weblog_cursor *c )$/;"	f	file:
+weblog_sql	weblog.c	/^const static char *weblog_sql = $/;"	v	file:
+weblog_vtab	weblog.c	/^} weblog_vtab;$/;"	t	typeref:struct:weblog_vtab_s	file:
+weblog_vtab_s	weblog.c	/^typedef struct weblog_vtab_s {$/;"	s	file:
