@@ -1,0 +1,8 @@
+How to solve dead dependancy?
+e.g. 
+X.rpm depends Y.rpm
+Y.rpm depends Z.rpm
+Z.rpm depends X.rpm
+solve:
+install all the rpm in one rpm install command.
+rpm -ivh X.rpm Y.rpm Z.rpm
